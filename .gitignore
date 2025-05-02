@@ -287,3 +287,4 @@ yarn-error.log
 .nuxt/
 .output/
 .netlify/
+.vercel

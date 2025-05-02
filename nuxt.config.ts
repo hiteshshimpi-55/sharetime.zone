@@ -30,7 +30,7 @@ export default defineNuxtConfig({
     '@/styles/app.scss'
   ],
   nitro: {
-    preset: 'netlify'
+    preset: 'static'
   },
   pwa: {
     manifestFilename: 'site.webmanifest',
