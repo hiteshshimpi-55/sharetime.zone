@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         { hid: 'og:title', property: 'og:title', content: 'Your OG Title' },
         { hid: 'og:description', property: 'og:description', content: 'Your OG Description' },
         { hid: 'og:image', property: 'og:image', content: 'https://sharetime-zone.vercel.app/og-image.jpg' },
-        { hid: 'og:url', property: 'og:url', content: 'hhttps://sharetime-zone.vercel.app' },
+        { hid: 'og:url', property: 'og:url', content: 'https://sharetime-zone.vercel.app' },
         { hid: 'og:type', property: 'og:type', content: 'website' }
       ],
       link: [
@@ -22,6 +22,7 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'opener', type: 'image/jpeg', href: '/og-image.jpg' },
         { rel: 'manifest', href: '/site.webmanifest' }
       ]
     }
@@ -34,6 +35,7 @@ export default defineNuxtConfig({
     '@/styles/fonts.css',
     '@/styles/app.scss'
   ],
+  ssr: false,
   nitro: {
     preset: 'static'
   },
