@@ -10,7 +10,12 @@ export default defineNuxtConfig({
       title: 'sharetime.zone',
       charset: 'utf-8',
       meta: [
-        { name: 'description', content: 'Share time in different timezones easily' }
+        { name: 'description', content: 'Share time in different timezones easily' },
+        { hid: 'og:title', property: 'og:title', content: 'Your OG Title' },
+        { hid: 'og:description', property: 'og:description', content: 'Your OG Description' },
+        { hid: 'og:image', property: 'og:image', content: 'https://sharetime-zone.vercel.app/og-image.jpg' },
+        { hid: 'og:url', property: 'og:url', content: 'hhttps://sharetime-zone.vercel.app' },
+        { hid: 'og:type', property: 'og:type', content: 'website' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
